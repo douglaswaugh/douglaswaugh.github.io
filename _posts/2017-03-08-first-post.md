@@ -66,6 +66,10 @@ Favourite episodes
 Series 4, 8: A long look down the road
 Series 5, Episode 6: Before we move on
 
+Things that are things I already do
+---
+
+Really tight atomic commits
 
 Conclusion
 ---
