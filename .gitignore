@@ -1,4 +1,4 @@
 /.vagrant/
-/blog/.sass-cache/
-/blog/_site/
-/blog/Gemfile.lock
+/.sass-cache/
+/_site/
+/Gemfile.lock
