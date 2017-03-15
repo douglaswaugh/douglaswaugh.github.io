@@ -5,6 +5,8 @@ author: Douglas Waugh
 excerpt: I recently completed Jbrains' World's Best Intro To TDD.  I decided to write this blog post to collect my thoughts.
 ---
 
+![A family wearing Jordans'](/assets/images/family-jordans.jpg "A family wearing Jordans")
+
 [JBrains' World's Best Intro to TDD](http://online-training.jbrains.ca/p/wbitdd-01)
 
 My interest in Test Driven Development (TDD) started five or six years ago and I have been using it as part of my normal development almost continuously since, so I am experienced writing well structured, easy to understand tests, as well as being comfortable using appropriate test doubles.
