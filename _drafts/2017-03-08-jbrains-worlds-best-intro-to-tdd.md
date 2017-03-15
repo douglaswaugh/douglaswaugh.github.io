@@ -8,17 +8,14 @@ excerpt: I recently completed Jbrains' World's Best Intro To TDD.  I decided to 
 Introduction
 ---
 
-### My experience with TDD before the course.
+My interest in Test Driven Development (TDD) started five or six years ago and I have been using it as part of my normal development almost continuously since then.  One of the main benefits that TDD proponents talk about is how TDD improves your object oriented (OO) design.  However, in the past despite following the TDD discipline, I haven't felt my designs improve beyond the mechanical improvements that making your objects more testable brings, so I have always been interested in trying to find what the missing link is.  One thing that can be difficult to pick up from books on the subjects of OO and TDD is the messy thought process that developers go through when discovering their designs which is why I find videos of live coding with commentary so insightful.
 
-Notes on what I would do differently if I had my time over again
+I'd been aware of Jbrains for sometime, perhaps from the [Growing Object Oriented Software Guided By Tests (GOOS) mailing list](https://groups.google.com/forum/#!forum/growing-object-oriented-software) or perhaps from his own [blog posts](http://blog.thecodewhisperer.com/).  I enjoyed the [GOOS book](https://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627) and Jbrains had once said that GOOS was the book he wished he had written so when I heard Jbrains had released a video course teaching TDD it was something I wanted to try and see if there were any insights I could glean.
+
+Things That Have Stuck With Me From The Course
 ---
 
-I didn't follow along with the examples excatly at the beginning.  I put test doubles in immediately because it looked like the right thing to do.
-
-Take Aways
----
-
-These are the different things I've been thinking more about after completing the course.  I completed the list (mostly) without reference back to the material, so it represents the things that I really have remembered from the course.  Not all of these things are new to me but Jbrains has definitely made me think harder, and sometimes differently, about them.
+I created this list from memory so it should represent the things that have actually stuck with me.  Not all of them are new to me but Jbrains definitely made me think harder, and sometimes differently, about them.
 
 ### Moving details up and abstractions down
 
@@ -80,6 +77,8 @@ Jbrains walks through a number of smells he can see in the code and gives possib
 Conclusion
 ---
 
-Definitely recommend the course to TDD beginners and intermediates (can't speak for the more advanced).
+Definitely recommend the course to TDD beginners and intermediates (I can't speak for the more advanced!).
 
 I'm not sure if all the worts were added, but enough were to make it feel as though I was watching somebody discover a design, with a running commentary to understand the developer's thought process.  Using talking about the problem to help concepts coelesce in our minds.
+
+Thinking that I knew best, I didn't follow along with the examples excatly at the beginning.  I put test doubles in immediately because it looked like the right thing to do and without realising Jbrains' was going to go this way in the second half of the course.  It would have been better if I had just followed along with his examples from the beginning so I could feel the pain and reinforce why it is a good idea to use test doubles in certain places.
