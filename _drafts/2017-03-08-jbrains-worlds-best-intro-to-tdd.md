@@ -30,7 +30,7 @@ Uncle Bob has a similar reason for making his code more generic and his tests mo
 
 ### Sensitivity to duplication
 
-Most developers know that duplication in your code base is generally I bad idea which can be removed by finding a suitable abstraction.  Perhaps the strongest signal towards a missing abstraction is that given by code that has been liberaly copied and pasted throughout the code base.  However, there are different, more subtle forms of duplication, which Jbrains picks up on.  
+Most developers know that duplication in your code base is generally I bad idea which can be removed by finding a suitable abstraction.  Perhaps the strongest signal towards a missing abstraction is that given by code that has been liberaly copied and pasted throughout the code base.  However, there are different, more subtle forms of duplication, which Jbrains picks up on.
 
 One is the duplication of the word 'display' in three different methods (`displayProductNotFoundMessage`, `displayEmptyBarcodeMessage`, `displayPrice`) and their containing class `ConsoleDisplay` (Series 5, Episode 8: A Long Look Down The Road).  This might be a signal that some of the work the method does could be extracted to a shared method with the argument the method receives varying the behaviour.  For more on this subject check out my blog on [Duplication and Abstraction](http://tech.energyhelpline.com/duplication-and-abstraction/).
 
@@ -42,34 +42,40 @@ The example that Jbrains has is within a class primarily concerned with the `Dis
 
 ### Lowest coupling
 
-example returning from the controller to remove the application code (in this case `Display`) from the domain code.
+I've always liked the idea of using the tell-don't-ask principle I first read about in Nat Pryce and Steve Freeman's [Growing Object Oriented Software Guided By Tests](https://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627) when designing interactions between objects.  Jbrains makes it clear why this is such a good idea; a method on an interface not expected to return anything is the weakest form of contract a method can have as, so long as the parameters passed remain the same, the implementing class can change as many times and it likes without affecting those things dependent on the interface.
 
 ### When to bend the rules
 
-Despite subverting the rule in the end, it is interesting how a method without a return value is the weakest form of contract; the calling class has no interest in the implementation of the interface, only that its dependencey implements it.
+Despite what I've said in Low coupling, what I've always struggled with is how this fits in to a normal web application for which a response is required for every request, mandating that at least the controllers return something.  
 
-#### Collection test cases
+Jbrains discusses this problem when attempting to remove the reference to `Display`, a concern of the application, from `SalesController`, a member of the domain in [Domain Driven Design](https://www.amazon.co.uk/Domain-driven-Design-Tackling-Complexity-Software/dp/0321125215) parlance.  He doesn't like the idea of losing the purity the design had when `SalesController` could just tell `Display` to render a message, but by `SalesController` returning an object that represents the message to be sent back up the call stack he is able to remove the reference to `Display` from the domain code.  As with many things in software engineering the decision is a trade off between two contradictory ideas both with merits and short-comings.
 
-Collection test cases: None, one, some, many, error.
+In this case Jbrains decides that, on balance, it's better to remove the reference to the application code from the domain code than to retain the tell-don't-ask design.  I can imagine that you might often have to do a bit of fudging when your beautiful snowflake domain code meets the horrible reality of application code.
 
-#### Using object references for object equality
+### Collection test cases
 
-Using object reference equality to delay implementing equality overrides
+Jbrains reminded me of the minimum number of test cases required to test a collection: none, one, some, many, and error.  A small point but nice to be reminded.
 
-#### git commit messages
+### Using object references for object equality
 
-They way Jbrains structures his commit messages has stayed with me a bit, despite hating them to begin with.
+Usually when you assert that one object is the same as another you override the equality members to compare all the members, in the case of a value object, or the ID, in the case of an entity.  However, Jbrains shows that you can delay implementing the equality overides when you have a reference to the object you are asserting on in the test, i.e., you pass the object you later assert on in to the object under test, perhaps when checking the referenced object is passed to a dependency.
+
+### git commits
+
+TO begin with I really didn't like the vague commit messages that Jbrains uses such as 'extracted a method' or 'renamed a variable'.  However, over time, I have got used to them and now use similar commit messages.
+
+I was already in favour of very tight commits, with anything not relevant to this particular change being committed separately.  I would even exclude removing an extraneous empty line or removing some unused namespaces as deserving of a different commit.  The less I have in a commit that isn't truely about the change I am committing, the easier it is for me to see what the change was when I come back to it.
 
 Favourite episodes
 ---
 
-Series 4, 8: A long look down the road
-Series 5, Episode 6: Before we move on
+### Series 4, 8: A long look down the road
 
-Things that are things I already do
----
+An indepth refactoring of a small class.  I think this episode gives a good insight to the level of sensitivity to duplication, naming, and levels of abstraction required of a developer.
 
-Really tight atomic commits
+### Series 5, Episode 6: Before we move on
+
+Jbrains walks through a number of smells he can see in the code and gives possible solutions to them.  Again it's nice to see what design issues catch his attention, why they catch his attention and what he would like to do about them.
 
 Conclusion
 ---
