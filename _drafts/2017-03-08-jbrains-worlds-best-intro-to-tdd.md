@@ -5,12 +5,13 @@ author: Douglas Waugh
 excerpt: I recently completed Jbrains' World's Best Intro To TDD.  I decided to write this blog post to collect my thoughts.
 ---
 
-Introduction
----
+[JBrains' World's Best Intro To TDD](http://online-training.jbrains.ca/p/wbitdd-01)
 
-My interest in Test Driven Development (TDD) started five or six years ago and I have been using it as part of my normal development almost continuously since then.  One of the main benefits that TDD proponents talk about is how TDD improves your object oriented (OO) design.  However, in the past despite following the TDD discipline, I haven't felt my designs improve beyond the mechanical improvements that making your objects more testable brings, so I have always been interested in trying to find what the missing link is.  One thing that can be difficult to pick up from books on the subjects of OO and TDD is the messy thought process that developers go through when discovering their designs which is why I find videos of live coding with commentary so insightful.
+My interest in Test Driven Development (TDD) started five or six years ago and I have been using it as part of my normal development almost continuously since, so I am experienced writing well structured, easy to understand tests, as well as being comfortable using appropriate test doubles.
 
-I'd been aware of Jbrains for sometime, perhaps from the [Growing Object Oriented Software Guided By Tests (GOOS) mailing list](https://groups.google.com/forum/#!forum/growing-object-oriented-software) or perhaps from his own [blog posts](http://blog.thecodewhisperer.com/).  I enjoyed the [GOOS book](https://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627) and Jbrains had once said that GOOS was the book he wished he had written so when I heard Jbrains had released a video course teaching TDD it was something I wanted to try and see if there were any insights I could glean.
+One thing I've found harder to understand and apply is the subtle link between TDD and object oriented (OO) design beyond the mechanical improvements that making classes testable provides.  I've found this difficult to learn from books because OO design, like many creative processes, tends to be a bit messy and books, because of the necessities of space, require more concise examples.  Videos of live coding with commentary can provide the extra messiness.
+
+I'd been aware of Jbrains for sometime, perhaps from the [Growing Object Oriented Software Guided By Tests (GOOS) mailing list](https://groups.google.com/forum/#!forum/growing-object-oriented-software) or perhaps from his own [blog posts](http://blog.thecodewhisperer.com/).  I enjoyed the [GOOS book](https://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627) and Jbrains had once said it was the book he wished he had written.  When I heard Jbrains had released a [video course teaching TDD](http://online-training.jbrains.ca/p/wbitdd-01) it was something I wanted to try and see if there were any insights I could glean.
 
 Things That Have Stuck With Me From The Course
 ---
