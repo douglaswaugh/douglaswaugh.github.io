@@ -4,6 +4,7 @@
       </section>
       <section>
         {% for post in site.posts %}
+          {% unless post.category == "apprenticeship-details" %}
         <article class="post">
           <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
@@ -16,6 +17,7 @@
           </p>
 
         </article>
+          {% endunless %}
         {% endfor %}
       </section>
       {% include footer.html %}
