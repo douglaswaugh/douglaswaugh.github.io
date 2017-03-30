@@ -16,9 +16,9 @@ The applications must be written in a number of programs across program language
 
 All programs must be written using test driven development.  Programs will be reviewed by mentors who will guide an apprentice's progression and may ask apprentices to refactor or completely re-write tasks and applications.
 
-Regular blog posts are required to be written almost every day.  Blog posts on technical topics that have been requested by mentors must be completed to the satisfaction of mentors who can ask posts, or parts of posts, to be rewritten until they are sure the apprentice understands the concept.
+Regular blog posts are required to be written almost every day.  Blog posts on technical topics that have been requested by mentors must be completed to the satisfaction of mentors who can ask for posts, or parts of posts, to be rewritten until they are sure the apprentice understands the concept.
 
-An apprentice will be asked to present themselves performing a kata, record a screencast of them performing a kata and give a presentation of a topic they have researched for their blog posts.
+An apprentice will be asked to perform a kata in front of the group, record a screencast of them performing a kata and give a presentation of a topic they have researched for their blog posts.
 
 The apprentice will pass their apprenticeship if a panel of craftsmen are satisfied with the quality of their tasks, applications and blog posts.
 
