@@ -27,74 +27,74 @@ Below are the tasks grouped by core concepts.  Some tasks appear more than once 
 Learning About a New Programming Language
 ---
 
-1. Do some koans
+* (1) Do some koans
 
 Learning about Test Driven Development
 ---
 
-2. Read Test Driven Development by Kent Beck
-3. Follow uncle bob's prime factors kata solution
-4. Complete roman numerals kata
-5. Complete coin counter kata
-6. Complete the bowling kata
+* (2) Read Test Driven Development by Kent Beck
+* (3) Follow uncle bob's prime factors kata solution
+* (4) Complete roman numerals kata
+* (5) Complete coin counter kata
+* (6) Complete the bowling kata
 
 Learning about Object Oriented Programming
 ---
 
-7. Write a blog post on each of the SOLID principles to be reviewed
-8. Write noughts and crosses game in a static object oriented langauge
-9. Write noughts and crosses game in a dynamic object oriented language
+* (7) Write a blog post on each of the SOLID principles to be reviewed
+* (8) Write noughts and crosses game in a static object oriented langauge
+* (9) Write noughts and crosses game in a dynamic object oriented language
 
 Learning about Functional Programming
 ---
 
-10. Write noughts and crosses game in a functional language
+* (10) Write noughts and crosses game in a functional language
 
 Learning to Write an Application
 ---
 
-11. Write a rock, paper, scissors game
-8. Write a noughts and crosses game in a static object orieneted language
-9. Write a noughts and crosses game in a dynamic object oriented language
-10. Write a noughts and crosses game in a functional language
-12. Add a GUI to a noughts and crosses game
-13. Add a web front-end to a noughts and crosses game
-14. Write a contacts management application with persistent data
-15. Write an echo server
-16. Extend a noughts and crosses game to a 4x4 grid
+* (11) Write a rock, paper, scissors game
+* (8) Write a noughts and crosses game in a static object orieneted language
+* (9) Write a noughts and crosses game in a dynamic object oriented language
+* (10) Write a noughts and crosses game in a functional language
+* (12) Add a GUI to a noughts and crosses game
+* (13) Add a web front-end to a noughts and crosses game
+* (14) Write a contacts management application with persistent data
+* (15) Write an echo server
+* (16) Extend a noughts and crosses game to a 4x4 grid
 
 Learning about Native Applications
 ---
 
-14. Add a GUI to a noughts and crosses program
-17. Write integration tests for noughts and crosses program with GUI
+* (14) Add a GUI to a noughts and crosses program
+* (17) Write integration tests for noughts and crosses program with GUI
 
 Learning About Web Applications
 ---
 
-13. Add a web front-end to a noughts and crosses game
-18. Write a web server that conforms to Cob Spec (https://github.com/8thlight/cob_spec)
+* (13) Add a web front-end to a noughts and crosses game
+* (18) Write a web server that conforms to Cob Spec (https://github.com/8thlight/cob_spec)
 
 Learning How to be a Consultant
 ---
 
-19. Participate in personal iteration planning meetings
+* (19) Participate in personal iteration planning meetings
 
 Learning About Persistent Data
 ---
 
-14. Write a contacts management application with persistent data
+* (14) Write a contacts management application with persistent data
 
 Learning to Apply Algorithms
 ---
 
-20. Add a computer player that uses minimax to a noughts and crosses game
-21. Add alpha-beta pruning to minimax algorithm in noughts and crosses game
+* (20) Add a computer player that uses minimax to a noughts and crosses game
+* (21) Add alpha-beta pruning to minimax algorithm in noughts and crosses game
 
 Learning About Tools and Techniques
 ---
 
-22. Write some acceptance tests for web front-end noughts and crosses game
-23. Profile noughts and crosses game to find out where the bottlenecks are
-24. Learn git with githug
-25. Learn a common build/package management/test runner (maven, gradle, grunt, nuget)
+* (22) Write some acceptance tests for web front-end noughts and crosses game
+* (23) Profile noughts and crosses game to find out where the bottlenecks are
+* (24) Learn git with githug
+* (25) Learn a common build/package management/test runner (maven, gradle, grunt, nuget)
